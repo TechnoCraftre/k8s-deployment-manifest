@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: portfolio-service
+  namespace: default
+  labels:
+    app: portfolio-app
+spec:
+  type: ClusterIP
+  selector:
+    app: portfolio-app
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+    name: http
+  sessionAffinity: None
