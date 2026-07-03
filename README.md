@@ -28,7 +28,7 @@ Production-grade Kubernetes manifests for deploying a containerized web applicat
                       │ HTTPS (443)
                       ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              AWS ALB (Application Load Balancer)              │
+│              AWS ALB (Application Load Balancer)            │
 │              • SSL termination                              │
 │              • Health checks: /health                       │
 └─────────────────────┬───────────────────────────────────────┘
@@ -149,6 +149,3 @@ kubectl get hpa portfolio-hpa -w
 | `configmap.yaml` | Nginx configuration |
 | `hpa.yaml` | Horizontal pod autoscaling |
 
-## Author
-
-Built as part of a DevOps portfolio demonstrating Kubernetes production patterns.
